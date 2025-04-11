@@ -1,10 +1,21 @@
 Attribute VB_Name = "RESET_FILTERS"
 
+'++----------------------------------------------------------------++
+'## Auteur
+'  +-- Laurion Nicolas
+'  +-- 23.08.2018
+'  +-- GNU licence
+'  +-- Version 2.0.0
+'++----------------------------------------------------------------++
+'
+'
+'## [Description]
+
 Sub ResetFilters_Exclude_WorkBook_By_Name()
 Attribute ResetFilters_Exclude_WorkBook_By_Name.VB_ProcData.VB_Invoke_Func = "m\n14"
     On Error GoTo err
     Dim dontResetFiltersOn
-    dontResetFiltersOn = Array("Etat par géomaticiens", "Cercle_autocad", "evolution", "13 graphique", "#72 Armoire recap")
+    dontResetFiltersOn = Array("Etat par gÃ©omaticiens", "Cercle_autocad", "evolution", "13 graphique", "#72 Armoire recap")
       
     Dim ws As Worksheet
     Dim wb As Workbook
